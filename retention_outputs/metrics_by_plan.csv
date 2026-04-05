@@ -1,0 +1,4 @@
+plan_tier,total_accounts,churned_count,churn_rate,total_arr,avg_arr,avg_lifetime,avg_features,avg_support
+Basic,2411,228,9.0,13574208,5630.12,584.13,49.88,4.0
+Enterprise,2551,252,10.0,148170624,58083.35,573.29,50.47,3.96
+Pro,2467,255,10.0,36728244,14887.82,572.73,50.1,3.97

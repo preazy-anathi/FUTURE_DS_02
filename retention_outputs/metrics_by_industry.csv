@@ -1,0 +1,6 @@
+industry,total_accounts,churned_count,churn_rate,total_arr,avg_lifetime,avg_features
+DevTools,1756,189,11.0,43052532,582.36,49.47
+HealthTech,1410,151,11.0,35496444,583.44,48.91
+Cybersecurity,1477,142,10.0,38141892,563.04,50.66
+FinTech,1603,154,10.0,45824136,576.45,50.74
+EdTech,1183,99,8.0,35958072,577.18,51.25
