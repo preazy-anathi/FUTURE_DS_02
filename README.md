@@ -255,52 +255,6 @@ All outputs saved to `retention_outputs/` folder
 
 You can import and use individual modules independently:
 
-### Example: Using Just the Analysis Module
-
-```python
-from data_io import load_data
-from cleaning import clean_and_prepare_data
-from analysis import calculate_kpis, analyze_churn_patterns
-
-# Load and clean data
-subscriptions, churn_events, accounts, feature_usage, support_tickets = load_data()
-df = clean_and_prepare_data(subscriptions, churn_events, accounts, feature_usage, support_tickets)
-
-# Run specific analyses
-kpis = calculate_kpis(df)
-churn_by_plan, churn_by_country, churn_reasons = analyze_churn_patterns(df)
-
-print(f"Churn Rate: {kpis['churn_rate']:.2f}%")
-print(f"ARR at Risk: ${kpis['churned_arr']:,.0f}")
-```
-
-### Example: Custom Visualization
-
-```python
-from data_io import load_data
-from cleaning import clean_and_prepare_data
-from visualization import create_executive_overview
-from analysis import calculate_kpis
-
-df = clean_and_prepare_data(...)
-kpis = calculate_kpis(df)
-
-# Generate just the dashboard
-create_executive_overview(df, kpis)
-```
-
-### Example: Exporting Data Only
-
-```python
-from data_io import load_data
-from cleaning import clean_and_prepare_data
-from reporting import export_summary_metrics
-
-df = clean_and_prepare_data(...)
-export_summary_metrics(df)
-```
-
----
 
 ## 📊 Analysis Pipeline (10 Steps)
 
